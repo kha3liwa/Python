@@ -1,0 +1,1 @@
+This App for zakat gold only now !!
