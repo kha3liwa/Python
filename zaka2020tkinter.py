@@ -4,7 +4,7 @@ win=Tk()
 win.geometry('960x500+100+100')
 win.resizable(0,0) # منع التحريك 
 win.configure(bg='#d9d9d9')
-khat=font=('arial',22,'bold')
+khat=font=('arial',12,'bold')
 khat1=font=('arial',40,'bold')
 khat2=font=('arial',90,'bold')
 var = IntVar()
@@ -22,29 +22,37 @@ def zakat():
         label_1.configure(text=" الرجاء ادخال اي قيمة ذهب بالجرام:->  ",fg='red')
         lab.configure(fg='red')
 # -------------- Designer -----------------------------
+ntb = ttk.Notebook(win)
+ntb.grid()
+
+fm1 = Frame(ntb)
+fm2 = Frame(ntb)
+fm3 = Frame(ntb)
+ntb.add(fm1, text='frame 1')
+
 #-------------- Combobox ------------------------------
-cb = ttk.Combobox(win,values=(18,21,24),textvariable=var)
+cb = ttk.Combobox(fm1,values=(18,21,24),textvariable=var,font=khat)
 cb.grid(row=6,column=1)
-lab=Label(win,text="اختر العيار للذهب")
+lab=Label(fm1,text="اختر العيار للذهب")
 lab.grid(row=6,column=2)
 # ------------- label Designer ------------------------
-label_1 = Label(win,text='الرجاء ادخال اي قيمة بالجرام:',
+label_1 = Label(fm1,text='الرجاء ادخال اي قيمة بالجرام:',
                bg='#d9d9d9',
                fg='green',
                font=khat                
                )
 label_1.grid(row=5,column=0)
 # ------------- Entry Designer ------------------------
-en=Entry(win,bg='cyan',bd=6,relief='groove',cursor='heart',
+en=Entry(fm1,bg='cyan',bd=9,relief='groove',cursor='heart',
          font=khat,
          fg='black',
          justify='left',
-         width=20,
+         width=19,
          selectbackground='pink',
          selectforeground='red'
          )
 en.grid(row=5,column=1)
-label_2 = Label(win,text='<.....>',
+label_2 = Label(fm1,text='<.....>',
                bg='#d9d9d9',
                fg='lime',
                font=khat2,
@@ -52,7 +60,7 @@ label_2 = Label(win,text='<.....>',
                )
 label_2.grid(row=8,column=1)
 
-showButton = Button(win, text="اظهر نصابه ",font=khat1,
+showButton = Button(fm1, text="اظهر نصابه ",font=khat1,
                     fg='grey',bg='powder blue',command=zakat)
 showButton.grid(row=7,column=0)
 
