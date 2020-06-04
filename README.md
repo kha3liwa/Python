@@ -1,7 +1,3 @@
-This App for zakat gold only now !!
-
-The calculation of Zakat for gold is as follows:
-Amount * of gold standard / 24
 As for the Zakat money account, it is as follows:
 Any one:
 1- (amount / 40)
