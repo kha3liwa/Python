@@ -7,3 +7,12 @@ Any one:
 #--------------------------
 As for zakat money, it is as follows:
 gold_weight * gold caliber / 24
+#--------------------------
+
+This App How calculation on zakat gold & calculation on zakat money !!
+
+The calculation of Zakat for gold is as follows:
+Amount * of gold standard / 24
+As for the Zakat money account, it is as follows:
+Anyone:
+1- (amount / 40)
