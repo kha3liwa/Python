@@ -56,7 +56,7 @@ button1 = tk.Button (root, text='push here ',bd=10,command=values, bg='orange')
 canvas1.create_window(200, 150, window=button1)
 
 label2 = tk.Label(canvas1, text=' ',bg=bgcolor,font=('Market',14,'bold'))
-canvas1.create_window(200, 200, window=label2)
+canvas1.create_window(200, 220, window=label2)
 
 bt1 = tk.Button(canvas1, text= "Exit",fg='red',bg='orange',bd=10,command=click)
 bt1.place(x=330,y=100)
