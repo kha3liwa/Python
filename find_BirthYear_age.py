@@ -14,8 +14,8 @@ fgcolor = '#884400'
 root.title("Find Birth Year or your age")
 khat=font=("Time" ,22, "bold")
 
-photo = PhotoImage(file = "altwere22.ico")
-root.iconphoto(False, photo)
+#photo = PhotoImage(file = "altwere22.ico")
+#root.iconphoto(False, photo)
 var=tk.StringVar()
 # ---------------- coding --------------
 
@@ -25,7 +25,7 @@ def values():
         thisyear=dt.strftime('%Y')
         sta=entry1.get()
         year_you=int(thisyear)-int(sta)
-        hi=str("Your birth year are  : ")+str(year_you)
+        hi=str("Your birth year is Or your age is  : ")+str(year_you)
         label2.configure(text=hi)
         label2.configure(bg='powder blue')
     except:
