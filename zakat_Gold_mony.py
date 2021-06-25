@@ -11,27 +11,29 @@ class Zakat:
 #---------------- code start pro ----------------------------------      
     def startApp(self):    
         print("  ")
-        print("|---------------------------------------------|")
-        print("|     Choose                                  |")
-        print("|    1 for chick zakat mony                   |")
-        print("|    2 for chick zakat gold                   |")
-        print("|    0 for Exit                               |")
-        print("|---------------------------------------------|")
+        print("|----------------------------------------------|")
+        print("|     Choose                                   |")
+        print("|    1 Choosing zakat on money                 |")
+        print("|    2 Choosing zakat on gold                  |")
+        print("|    0 Exit                                    |")
+        print("|----------------------------------------------|")
 #---------------- code for choose any use --------------------------
         choose = int(input("enter 1 or 2 or 3  :"))
         if choose == 1:
-            print (" your choose zakat mony 1\n")
+            print (" your choose zakat on money  1\n")
             print(self.calculate_zakat_mony(1000))
             self.startApp()
         elif choose == 2 :
-            print("your choose zakat Gold 2\n")
+            print("your choose zakat on gold 2\n")
             print(self.calculate_zakat_Gold(100))
             self.startApp()
         elif choose == 0 :
-            print("Think you for use This App by:kha3liwa")
+            print("|----------------------------------------|")
+            print("| Think you for use This App by:kha3liwa |")
+            print("|----------------------------------------|")
             sys.exit()
         else:
-            print("please try agean\n")
+            print("please try again\n")
             self.startApp()
  #---------------- code calculate zakat gold -------------------------- 
     def calculate_zakat_Gold(self, x):
